@@ -1,0 +1,141 @@
+﻿@page "/nav"
+@using Client.EstadosDeLaAplicacion
+@using Microsoft.AspNetCore.Components.Authorization
+@inject TodosLosEstados estadoDepartamento
+<AuthorizeView>
+    <Authorized>
+        <div class="top-row ps-3 navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">
+                    Bienvenido,@context.User.Identity!.Name
+                </a>
+                <button title="Menu De Navegacion" class="navbar-toggler" @onclick="ToggleNavMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+            <nav class="flex-column">
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="counter">
+                        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link p-2" @onclick="MostrarContenedorMenuAdmin" style="cursor:pointer" href="javascript:void()">
+                        <div class="hstack gap-1">
+                            <span class="bi bi-person-fill fs-3 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                            <span>Administración</span>
+                        </div>                        
+                    </NavLink>
+                    <a class="nav-link p-2 text-white" style="margin-left:5rem; visibility:@CssStyle">
+                        <div class="hstack">
+                            <span class="bi bi-people fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                            <span>Usuarios</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item px-3" style="margin-top:@MargenDepartamento">
+                    <NavLink class="nav-link p-2" @onclick="MostrarContenedorDepartamento" style="cursor:pointer" href="javascript:void()">
+                        <div class="hstack gap-1">
+                            <span class="bi bi-backpack4-fill fs-3 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                            <span>Departamento</span>
+                        </div>
+                    </NavLink>
+                    <div class="nav-link p-2 text-white" style="margin-left:5rem; visibility:@CssStyleDepartamento"> 
+                        <ul class="list-group">
+                            <li style="list-style:none" class="cusorStyle">
+                                <a class="nav-link p-2" @onclick="CickDepartamentoGeneral">
+                                    <div class="hstack text-wrap">
+                                        <span class="bi bi-file-medical fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                                        <span class="fs-6">General</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style:none" class="cusorStyle">
+                                <a class="nav-link p-2">
+                                    <div class="hstack">
+                                        <span class="bi bi-substack fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                                        <span>Departamento</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style:none" class="cusorStyle">
+                                <a class="nav-link p-2">
+                                    <div class="hstack">
+                                        <span class="bi bi-chevron-bar-contract fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                                        <span>Sucursal</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+
+
+@code {
+    // Propiedades.
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    public string MargenDepartamento { get; set; } = "-3.5rem";
+    private string CssStyle = "hidden";
+    public bool MostrarOculto { get; set; } = false;
+    private string CssStyleDepartamento = "hidden";
+    public bool MostrarDepartamenOculto { get; set; } = false;
+
+    // Metodos.
+
+    // Mostrar menu admin.
+    private void MostrarContenedorMenuAdmin()
+    {
+        MostrarOculto = !MostrarOculto;
+        if (MostrarOculto)
+        {
+            MargenDepartamento = "0";
+            CssStyle = "visible";
+        }
+        else
+        {
+            MargenDepartamento = "-3.5rem";
+            CssStyle = "hidden";
+        }
+    }
+
+    // Mostrar menu Departamento
+    private void MostrarContenedorDepartamento()
+    {
+        MostrarDepartamenOculto = !MostrarDepartamenOculto;
+        if (MostrarDepartamenOculto)
+        {
+            CssStyleDepartamento = "visible";
+        }
+        else
+        {
+            CssStyleDepartamento = "hidden";
+        }
+    }
+
+    // Click Dpto. Gral.
+    void CickDepartamentoGeneral()
+    {
+        estadoDepartamento.CickDepartamentoGeneral();
+    }
+}

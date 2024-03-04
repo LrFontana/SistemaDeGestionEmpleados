@@ -1,0 +1,222 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81787A98-E57B-4EC9-B9AF-6F2E038B2CC0}|LibreriaServer\\LibreriaServer.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\libreriaserver\\repositorios\\implementaciones\\cuentausuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81787A98-E57B-4EC9-B9AF-6F2E038B2CC0}|LibreriaServer\\LibreriaServer.csproj|solutionrelative:libreriaserver\\repositorios\\implementaciones\\cuentausuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06747D98-4A51-4E44-9D2F-B352F1553E8C}|Server\\Server.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06747D98-4A51-4E44-9D2F-B352F1553E8C}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81787A98-E57B-4EC9-B9AF-6F2E038B2CC0}|LibreriaServer\\LibreriaServer.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\libreriaserver\\helpers\\seccionjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81787A98-E57B-4EC9-B9AF-6F2E038B2CC0}|LibreriaServer\\LibreriaServer.csproj|solutionrelative:libreriaserver\\helpers\\seccionjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06747D98-4A51-4E44-9D2F-B352F1553E8C}|Server\\Server.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06747D98-4A51-4E44-9D2F-B352F1553E8C}|Server\\Server.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06747D98-4A51-4E44-9D2F-B352F1553E8C}|Server\\Server.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06747D98-4A51-4E44-9D2F-B352F1553E8C}|Server\\Server.csproj|solutionrelative:server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81787A98-E57B-4EC9-B9AF-6F2E038B2CC0}|LibreriaServer\\LibreriaServer.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\libreriaserver\\datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81787A98-E57B-4EC9-B9AF-6F2E038B2CC0}|LibreriaServer\\LibreriaServer.csproj|solutionrelative:libreriaserver\\datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\client\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|solutionrelative:client\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296FB629-EF25-49A3-AD03-7471ED16E1B9}|LibreriaCliente\\LibreriaCliente.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\libreriacliente\\servicios\\implementaciones\\serviciocuentausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296FB629-EF25-49A3-AD03-7471ED16E1B9}|LibreriaCliente\\LibreriaCliente.csproj|solutionrelative:libreriacliente\\servicios\\implementaciones\\serviciocuentausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|solutionrelative:client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|d:\\proyectos c# en visual studio\\appventas\\sistemagestionempleados\\client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58C8F7CE-D757-4F11-A560-FAD618240047}|Client\\Client.csproj|solutionrelative:client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CuentaUsuarioRepositorio.cs",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaServer\\Repositorios\\Implementaciones\\CuentaUsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "LibreriaServer\\Repositorios\\Implementaciones\\CuentaUsuarioRepositorio.cs",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaServer\\Repositorios\\Implementaciones\\CuentaUsuarioRepositorio.cs",
+              "RelativeToolTip": "LibreriaServer\\Repositorios\\Implementaciones\\CuentaUsuarioRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T02:47:33.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeccionJwt.cs",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaServer\\Helpers\\SeccionJwt.cs",
+              "RelativeDocumentMoniker": "LibreriaServer\\Helpers\\SeccionJwt.cs",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaServer\\Helpers\\SeccionJwt.cs",
+              "RelativeToolTip": "LibreriaServer\\Helpers\\SeccionJwt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T02:45:45.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Server\\appsettings.json",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Server\\appsettings.json",
+              "RelativeToolTip": "Server\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-04T02:35:31.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaServer\\Datos\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LibreriaServer\\Datos\\AppDbContext.cs",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaServer\\Datos\\AppDbContext.cs",
+              "RelativeToolTip": "LibreriaServer\\Datos\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T02:34:50.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServicioCuentaUsuario.cs",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaCliente\\Servicios\\Implementaciones\\ServicioCuentaUsuario.cs",
+              "RelativeDocumentMoniker": "LibreriaCliente\\Servicios\\Implementaciones\\ServicioCuentaUsuario.cs",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaCliente\\Servicios\\Implementaciones\\ServicioCuentaUsuario.cs",
+              "RelativeToolTip": "LibreriaCliente\\Servicios\\Implementaciones\\ServicioCuentaUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T02:31:02.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Client\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Client\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-03T05:46:59.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\App.razor",
+              "RelativeDocumentMoniker": "Client\\App.razor",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\App.razor",
+              "RelativeToolTip": "Client\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-03T05:46:05.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Client\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Client\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-03T05:43:27.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T05:41:49.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T05:41:17.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Server\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Server\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-03T05:40:49.962Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

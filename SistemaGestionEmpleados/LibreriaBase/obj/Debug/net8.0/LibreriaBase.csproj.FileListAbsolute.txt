@@ -1,0 +1,12 @@
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\bin\Debug\net8.0\LibreriaBase.deps.json
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\bin\Debug\net8.0\LibreriaBase.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\bin\Debug\net8.0\LibreriaBase.pdb
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.csproj.AssemblyReference.cache
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.AssemblyInfoInputs.cache
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.AssemblyInfo.cs
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.csproj.CoreCompileInputs.cache
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\refint\LibreriaBase.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\LibreriaBase.pdb
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaBase\obj\Debug\net8.0\ref\LibreriaBase.dll

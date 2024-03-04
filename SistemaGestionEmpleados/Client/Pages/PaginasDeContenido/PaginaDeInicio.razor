@@ -1,0 +1,30 @@
+﻿@page "/home/dashboard"
+@layout MainLayout
+@using Client.Pages.OtrasPaginas
+@using Client.Pages.PaginasDeContenido.PaginasDepartamento
+
+<MesaBanner/>
+<PaginaDepartamentoGeneral />
+@code {
+	// Propiedades.
+	[CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
+
+	// Metodos.
+
+	// "metodo overrride".
+	protected async override Task OnInitializedAsync()
+	{
+		await VerificarAutenticacionUsuario();
+	}
+
+	// Verificar autenticacion del usuario.
+	private async Task VerificarAutenticacionUsuario()
+	{
+		var usuario = (await AuthenticationState).User;
+		bool estaAutenticadoElUsuario = usuario.Identity!.IsAuthenticated;
+		if (estaAutenticadoElUsuario!)
+		{
+			NavMager.NavigateTo("/identity/account/login");
+		}
+	}
+}

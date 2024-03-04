@@ -1,0 +1,134 @@
+﻿@implements IDisposable
+
+
+@if (servicioTodosLosEstados.MostrarDepartamentoGeneral)
+{
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card">
+					<div class="card-header">
+						<h4 class="float-start">Departamento General</h4>
+						<button class="btn btn-outline-success float-end" @onclick="AbrirDialog"><i class="bi bi-plus-circle-dotted"></i>Agregar Departamento</button>
+					</div>
+					<div class="card-header">
+						<div class="card-body">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Primero</th>
+										<th scope="col">Ultimo</th>
+										<th scope="col">Manejar</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Leandro</td>
+										<td>Rosario</td>
+										<td>mdo</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Molly</td>
+										<td>Buenos Aires</td>
+										<td>fat</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td colspan="2">Leof.1987</td>
+										<td>twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+<PaginaDepartamentoGeneralDialog @ref="departamentoGeneralDialog" 
+								GuardarOperacionesEvent="GuardarOperacionEvent"	
+								DepartamentoGeneral="DepartamentoGeneral"/>
+@code {
+	// Propiedades.
+	PaginaDepartamentoGeneralDialog? departamentoGeneralDialog;
+	DepartamentoGeneral DepartamentoGeneral = new();
+	public string Titulo { get; set; } = "Agregar";
+	public List<DepartamentoGeneral> ListaDepartamentoGeneral { get; set; } = new();
+
+	// Metodos.
+	// Initialized.
+	protected override async Task OnInitializedAsync()
+	{
+		await ObtenerDepartamentoGeneral();
+		servicioTodosLosEstados.Accion += StateHasChanged;
+	}
+
+	// Dispose.
+	public void Dispose()
+	{
+		servicioTodosLosEstados.Accion -= StateHasChanged;
+	}
+
+	// Abrir Dialog
+	void AbrirDialog()
+	{
+		departamentoGeneralDialog?.AbrirDialog();
+	}
+
+	// Obtener Departamento General.
+	private async Task ObtenerDepartamentoGeneral()
+	{
+		ListaDepartamentoGeneral = await servicioDepartamentoGeneral.ObtenerTodos(RutasApi.BaseUrlDepartamentoGeneral);
+	}
+
+	// Evento Guardar Operaciones
+	private async Task GuardarOperacionEvent(DepartamentoGeneral departamentoGeneral)
+	{
+		// propiedad.
+		bool verificacionExitosa = false;
+
+		if (departamentoGeneral.Id > 0)
+		{
+			var resultado = await servicioDepartamentoGeneral.Actualizar(departamentoGeneral, RutasApi.BaseUrlDepartamentoGeneral);
+			verificacionExitosa = await MostrarMensaje(resultado.Alerta, resultado.Mensaje);
+		}
+		else
+		{
+			var respuesta = await servicioDepartamentoGeneral.Insertar(departamentoGeneral, RutasApi.BaseUrlDepartamentoGeneral);
+			verificacionExitosa = await MostrarMensaje(respuesta.Alerta, respuesta.Mensaje);
+		}
+		if (verificacionExitosa)
+		{
+			DepartamentoGeneral = new();
+			await ObtenerDepartamentoGeneral();
+			departamentoGeneralDialog?.CambiarTitulo("Agregar");
+		}
+	}
+
+	// Mostrar Mensaje
+	private async Task<bool> MostrarMensaje(bool alerta, string msj)
+	{
+		if (alerta)
+		{
+			await dialogService.AlertAsync(msj, "Operacion Exitosa.");
+			return true;
+		}
+		else
+		{
+			await dialogService.AlertAsync(msj, "Alerata!");
+			return false;
+		}
+	}
+
+	// Editar Click
+	private void ClickEditar(DepartamentoGeneral departamentoGeneral)
+	{
+		departamentoGeneralDialog?.CambiarTitulo("Actualizar");
+		DepartamentoGeneral = departamentoGeneral;
+		AbrirDialog();
+	}
+}

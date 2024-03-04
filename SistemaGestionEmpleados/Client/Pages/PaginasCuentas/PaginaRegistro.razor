@@ -1,0 +1,117 @@
+﻿@page "/identity/account/register"
+@using Client.Pages.OtrasPaginas
+@layout AutenticacionLayout
+@inject SfDialogService dialogService
+
+<div class="container">
+	<div class="row">
+		<div class="col-log-4"></div>
+		<div class="col-log-4">
+			<EditForm Enhance Model="Usuario" OnInvalidSubmit="RegistroHandler">
+				<DataAnnotationsValidator />
+				<div class="card bg-dark d-flex justify-content-center" style="opacity:0.5; margin-top:10%; border-radius:10px; color:white; font-weight:bold">
+					<div class="card-header text-center fs-5">Crear Cuenta</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4"></div>
+							<div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-center">
+								<img style="border-radius:20px" src="../Imagenes/CompañiaLogos/logo1.jpg" height="50" width="50" />
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4"></div>
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="form-group">
+							<label class="form-label">Nombre Completo</label>
+							<InputText @bind-Value="Usuario.NombreCompleto" class="form-control"></InputText>
+						</div>
+						<div class="form-group mt-3">
+							<label class="form-label">Email</label>
+							<InputText @bind-Value="Usuario.Email" class="form-control"></InputText>
+						</div>
+						<div class="form-group mt-3">
+							<label class="form-label">Contraseña</label>
+							<input type="password" @bind="Usuario.Contraseña" class="form-control"></input>
+						</div>
+						<div class="form-group mt-3">
+							<label class="form-label">Confirmar Contraseña</label>
+							<input type="password" @bind="Usuario.ConfirmarContraseña" class="form-control"></input>
+						</div>
+						<div class="form-group mt-3">
+							@if (MostrarBotonDeCarga)
+							{
+								<BotonEsperaDeCarga></BotonEsperaDeCarga>
+							}
+							else
+							{
+								<button class="btn btn-primary float-end" type="submit">Crear Cuenta</button>
+							}							
+						</div>
+					</div>
+					<div class="card-footer">
+						<span class="text-center">
+							Ya Tienes Una Cuenta? |
+							<a class="btn-link" href="identity/account/login"> Iniciar Sesión </a>
+						</span>
+						<ValidationSummary />
+					</div>
+				</div>
+			</EditForm>
+		</div>
+		<div class="col-log-4">			
+		</div>
+	</div>
+</div>
+
+@code {
+
+	// Propiedades.
+
+	public bool MostrarBotonDeCarga { get; set; } = false;
+	Register Usuario = new();
+
+	[CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
+
+	// Metodos.
+	// "metodo overrride".
+	protected async override Task OnInitializedAsync()
+	{
+		await VerificarAutenticacionUsuario();
+
+	}
+
+	// Manegar Registro.
+	async Task RegistroHandler()
+	{
+		MostrarBotonDeCarga = true;
+		var resultado = await servicioCuentaUsuario.CrearAsync(Usuario);
+		if (resultado.Alerta)
+		{
+			await MostrarDialogo(resultado.Mensaje, "Exitoso");
+			Usuario = new();
+		}
+		else
+		{
+			await MostrarDialogo(resultado.Mensaje, "Alerta!");
+		}
+
+		MostrarBotonDeCarga = false;
+	}
+
+	// Mostrar Dialogos.
+	private async Task MostrarDialogo(string conenido, string titulo)
+	{
+		await dialogService.AlertAsync(conenido, titulo);
+	}
+
+	// Verificar autenticacion del usuario.
+	private async Task VerificarAutenticacionUsuario()
+	{
+		var usuario = (await AuthenticationState).User;
+		bool estaAutenticadoElUsuario = usuario.Identity!.IsAuthenticated;
+		if (estaAutenticadoElUsuario!)
+		{
+			NavMager.NavigateTo("/home/dashboard");
+		}
+	}
+}

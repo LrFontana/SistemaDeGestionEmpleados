@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+5sVtnwqLIxYJrcfKaWXSHwvIaNyM5VIzl3u7hptf2CgEjlku0EOK7ffZ6dt7V1SuDoLsN6bdUPWaGQQWZncSg==",
+  "success": true,
+  "projectFilePath": "D:\\Proyectos C# en visual studio\\APPVentas\\SistemaGestionEmpleados\\LibreriaBase\\LibreriaBase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leand\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\leand\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\leand\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\leand\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\leand\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

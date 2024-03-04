@@ -1,0 +1,514 @@
+[
+  {
+    "ContainingType": "Server.Controllers.AutentificacionControl",
+    "Method": "IniciarSesionAsync",
+    "RelativePath": "api/AutentificacionControl/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "LibreriaBase.DTOs.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.AutentificacionControl",
+    "Method": "CrearAsync",
+    "RelativePath": "api/AutentificacionControl/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "LibreriaBase.DTOs.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.AutentificacionControl",
+    "Method": "TokenDeActualizacionAsync",
+    "RelativePath": "api/AutentificacionControl/token-de-actualizacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "LibreriaBase.DTOs.TokenActualizado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Ciudad, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Actualizar",
+    "RelativePath": "api/ControlCiudad/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Ciudad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Ciudad, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insertar",
+    "RelativePath": "api/ControlCiudad/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Ciudad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Ciudad, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControlCiudad/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Ciudad, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ControlCiudad/obtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Ciudad, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ControlCiudad/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Departamento, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Actualizar",
+    "RelativePath": "api/ControlDepartamento/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Departamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Departamento, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insertar",
+    "RelativePath": "api/ControlDepartamento/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Departamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Departamento, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControlDepartamento/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Departamento, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ControlDepartamento/obtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Departamento, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ControlDepartamento/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.DepartamentoGeneral, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Actualizar",
+    "RelativePath": "api/ControlDepartamentoGeneral/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.DepartamentoGeneral",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.DepartamentoGeneral, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insertar",
+    "RelativePath": "api/ControlDepartamentoGeneral/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.DepartamentoGeneral",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.DepartamentoGeneral, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControlDepartamentoGeneral/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.DepartamentoGeneral, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ControlDepartamentoGeneral/obtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.DepartamentoGeneral, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ControlDepartamentoGeneral/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pais, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Actualizar",
+    "RelativePath": "api/ControlPais/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Pais",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pais, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insertar",
+    "RelativePath": "api/ControlPais/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Pais",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pais, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControlPais/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pais, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ControlPais/obtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pais, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ControlPais/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pueblo, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Actualizar",
+    "RelativePath": "api/ControlPueblo/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Pueblo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pueblo, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insertar",
+    "RelativePath": "api/ControlPueblo/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Pueblo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pueblo, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControlPueblo/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pueblo, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ControlPueblo/obtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Pueblo, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ControlPueblo/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Rama, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Actualizar",
+    "RelativePath": "api/ControlRama/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Rama",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Rama, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insertar",
+    "RelativePath": "api/ControlRama/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "LibreriaBase.Entidades.Rama",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Rama, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControlRama/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Rama, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ControlRama/obtenerPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.ControlGenerico\u00601[[LibreriaBase.Entidades.Rama, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ControlRama/todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "api/WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LibreriaBase.DTOs.WeatherForecast, LibreriaBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

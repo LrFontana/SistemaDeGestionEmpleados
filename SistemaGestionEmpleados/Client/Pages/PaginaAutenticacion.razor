@@ -1,0 +1,23 @@
+﻿@page "/"
+
+@code{
+
+	// Propiedades.
+	[CascadingParameter] public Task<AuthenticationState> AuthenticationState {get; set;}
+
+	// Metodos.
+
+	// "metodo override"
+	protected async override Task OnInitializedAsync()
+	{
+		var usuario = (await AuthenticationState).User;
+		if (usuario.Identity!.IsAuthenticated)
+		{
+			NavMager.NavigateTo("/home/dashboard");
+		}
+		else
+		{
+			NavMager.NavigateTo("/identity/account/login");
+		}
+	}
+}

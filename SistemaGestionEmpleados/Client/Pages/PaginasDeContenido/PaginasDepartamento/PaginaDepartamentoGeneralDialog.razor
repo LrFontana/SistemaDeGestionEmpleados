@@ -1,0 +1,62 @@
+﻿
+<SfDialog Width="250px" IsModal="true" ShowCloseIcon="true" @bind-Visible="IsVisible">
+
+	<DialogEvents OnOpen="AbrirDialog"></DialogEvents>
+	
+	<DialogTemplates>
+		<Header>@Titulo Departamento General</Header>
+		<Content>
+			<EditForm Model="DepartamentoGeneral" Enhance OnSubmit="Guardar">
+				<div class="card border-success">
+					<div class="card-body">
+						<div class="form-group">
+							<label class="form-label">Nombre</label>
+							<InputText @bind-Value="DepartamentoGeneral.Nombre" class="form-control"/>
+						</div>
+					</div>
+				</div>
+			</EditForm>
+		</Content>
+	</DialogTemplates>
+
+	<DialogButtons>
+		<DialogButton Content="Guardar" Type="ButtonType.Submit" IsPrimary="true"  OnClick="Guardar"/>
+	</DialogButtons>
+</SfDialog>
+
+@code {
+
+	//Propiedades.
+	[Parameter]	public DepartamentoGeneral DepartamentoGeneral { get; set; } = new();
+	[Parameter] public EventCallback<DepartamentoGeneral> GuardarOperacionesEvent { get; set; }
+	public string Titulo { get; set; } = "Agregar";
+	private bool IsVisible { get; set; } = false;
+
+
+	// Metodos.
+	// Abrir Dialog
+	public void AbrirDialog()
+	{
+		IsVisible = true;
+		StateHasChanged();
+	}
+
+	// Guardar.
+	async void Guardar()
+	{
+		if (string.IsNullOrEmpty(DepartamentoGeneral.Nombre))
+		{
+			await dialogService.AlertAsync("Debe ingresar un nombre de Departamento General", "Alerta!");
+		}
+		else
+		{
+			await GuardarOperacionesEvent.InvokeAsync(DepartamentoGeneral);
+		}
+	}
+
+	// Cambiar Titulo
+	public void CambiarTitulo(string titulo)
+	{
+		Titulo = titulo;
+	}
+}

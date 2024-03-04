@@ -1,0 +1,15 @@
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\bin\Debug\net8.0\LibreriaCliente.deps.json
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\bin\Debug\net8.0\LibreriaCliente.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\bin\Debug\net8.0\LibreriaCliente.pdb
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\bin\Debug\net8.0\LibreriaBase.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\bin\Debug\net8.0\LibreriaBase.pdb
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.csproj.AssemblyReference.cache
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.AssemblyInfoInputs.cache
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.AssemblyInfo.cs
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.csproj.CoreCompileInputs.cache
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\Libreria.791BD17A.Up2Date
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\refint\LibreriaCliente.dll
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\LibreriaCliente.pdb
+D:\Proyectos C# en visual studio\APPVentas\SistemaGestionEmpleados\LibreriaCliente\obj\Debug\net8.0\ref\LibreriaCliente.dll

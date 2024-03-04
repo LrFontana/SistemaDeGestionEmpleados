@@ -1,0 +1,44 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using Client.EstadosDeLaAplicacion
+@using LibreriaBase.Entidades
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.JSInterop
+@using Client
+@using Client.Layout
+
+@using LibreriaBase.DTOs
+@using Microsoft.AspNetCore.Components.Authorization
+@using LibreriaCliente.Helpers
+@using LibreriaCliente.Servicios.Contratos
+@using Syncfusion.Blazor.Popups
+
+
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager NavMager
+
+@* / Autenticacion *@
+@inject IServicioCuentaUsuario servicioCuentaUsuario
+
+@* / Estados Aplicacion *@
+@inject TodosLosEstados servicioTodosLosEstados
+
+@* / Servicio Syncfusion dialog *@
+@inject SfDialogService dialogService
+
+@* / Departamento General / Departamento / Rama *@
+@inject IServicioInterfazGenerica<DepartamentoGeneral> servicioDepartamentoGeneral
+@inject IServicioInterfazGenerica<Departamento> servicioDepartamento
+@inject IServicioInterfazGenerica<Rama> servicioRama
+
+@* / Pais / Ciudad / Pueblo *@
+@inject IServicioInterfazGenerica<Pais> servicioPais
+@inject IServicioInterfazGenerica<Ciudad> servicioCiudad
+@inject IServicioInterfazGenerica<Pueblo> servicioPueblo
+
+@* / Empleado *@
+@inject IServicioInterfazGenerica<Empleado> servicioEmpleado
